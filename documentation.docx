@@ -1,0 +1,98 @@
+Customer Segmentation & Predictive Marketing App – Documentation
+
+1. Project Overview
+This project is a real-world Data Science pipeline for e-commerce businesses.
+It allows users to upload customer data, perform segmentation, and predict campaign response with an interactive Streamlit web app.
+
+Business Problem:
+Businesses have thousands of customers, but their behavior differs. Some are loyal, some shop occasionally, and some only during discounts.
+This project helps analyze customer behavior to make smarter marketing decisions.
+
+2. Features
+
+RFM feature calculation from transactions (Recency, Frequency, Monetary value)
+
+Customer Segmentation using K-Means clustering
+
+Predictive Marketing using Random Forest classifier
+
+Interactive visualizations with Plotly
+
+Simple UI with Streamlit (upload CSV, see results instantly)
+
+Fully deployable online on Streamlit Cloud
+
+3. Dataset Format
+
+Column Name	Description
+Customer No.	Unique customer identifier
+Qty	Quantity purchased
+Sold Price	Price per item
+Purchase Date	Date of transaction
+Job No.	Unique transaction number
+
+Optional columns: Customer Name, Category, Email, etc.
+
+4. Getting Started (Local Setup)
+
+Clone the repository:
+
+git clone https://github.com/<your-username>/customer-segmentation-app.git
+cd customer-segmentation-app
+
+
+Create a virtual environment:
+
+python3 -m venv venv
+source venv/bin/activate   # Mac/Linux
+venv\Scripts\activate      # Windows
+
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+
+Run the Streamlit app:
+
+streamlit run Marketing_App.py
+
+
+Open browser at http://localhost:8501
+
+5. Deployment on Streamlit Cloud
+
+Push repository to GitHub
+
+Go to Streamlit Cloud
+ → New app → Select repo → Branch main → File: Marketing_App.py
+
+Click Deploy → Public URL will be generated
+
+Share link for live interaction
+
+6. Folder Structure
+
+customer-segmentation-app/
+│
+├── Marketing_App.py        # Streamlit app
+├── requirements.txt        # Python dependencies
+├── README.md               # Project description
+├── sample_dataset.csv      # Optional sample CSV for testing
+
+
+7. Technologies Used
+
+Python 3.13
+
+Pandas & NumPy
+
+Scikit-learn (KMeans, RandomForest)
+
+Plotly (interactive visualization)
+
+Streamlit (UI & deployment)
+
+8. License
+
+Open-source for learning and portfolio purposes.
